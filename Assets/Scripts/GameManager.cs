@@ -118,4 +118,12 @@ public class GameManager : MonoBehaviour
                 break;
         }        
     }
+
+    public void Sell()
+    {
+        int amount = wheat * 12;
+        wheat = 0;
+        money += amount;
+        UI.instance.UpdateHeaderPanel();
+    }
 }
