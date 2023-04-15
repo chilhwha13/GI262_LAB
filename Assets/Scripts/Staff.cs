@@ -1,13 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public enum UnitState
-{
-    Idle,
-    Walk
-}
 
 public class Staff : MonoBehaviour
 {
@@ -22,14 +16,14 @@ public class Staff : MonoBehaviour
     public int dailyWage;
  
     //Animation
-    [SerializeField] private UnitState state;
-    public UnitState State { get { return state; } set { state = value; } }
+    //[SerializeField] private UnitState state;
+    //public UnitState State { get { return state; } set { state = value; } }
  
     //NavMesh
-    [SerializeField] private NavMeshAgent navAgent;
-    public NavMeshAgent NavAgent { get { return navAgent; } }
+    //[SerializeField] private NavMeshAgent navAgent;
+    //public NavMeshAgent NavAgent { get { return navAgent; } }
  
-    void Awake()
+    /*void Awake()
     {
         navAgent = GetComponent<NavMeshAgent>();
     }
@@ -37,7 +31,7 @@ public class Staff : MonoBehaviour
     void Update()
     {
         CheckStop();
-    }
+    }*/
  
     public void InitCharID(int id)
     {
@@ -58,7 +52,7 @@ public class Staff : MonoBehaviour
         }
     }
  
-    public void SetToWalk(Vector3 dest)
+    /*public void SetToWalk(Vector3 dest)
     {
         state = UnitState.Walk;
  
@@ -75,5 +69,5 @@ public class Staff : MonoBehaviour
             state = UnitState.Idle;
             navAgent.isStopped = true;
         }
-    }
+    }*/
 }
