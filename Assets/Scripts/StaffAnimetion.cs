@@ -19,19 +19,19 @@ public class StaffAnimetion : MonoBehaviour
         if (staff.State == UnitState.Idle)
         {
             DisableAll();
-            anim.SetBool("isIdle", true);
+            anim.SetBool("IsIdle", true);
         }
  
         if (staff.State == UnitState.Walk)
         {
             DisableAll();
-            anim.SetBool("isWalk", true);
+            anim.SetBool("IsWalk", true);
         }
     }
  
     private void DisableAll()
     {
-        anim.SetBool("isIdle", false);
-        anim.SetBool("isWalk", false);
+        anim.SetBool("IsIdle", false);
+        anim.SetBool("IsWalk", false);
     }
 }

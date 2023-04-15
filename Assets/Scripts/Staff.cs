@@ -35,10 +35,10 @@ public class Staff : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
     }
  
-    /*void Update()
+    void Update()
     {
         CheckStop();
-    }*/
+    }
  
     public void InitCharID(int id)
     {

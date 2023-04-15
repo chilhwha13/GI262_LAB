@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
             s.InitCharID(i);
             s.ChangeCharSkin();
  
-            //s.SetToWalk(rallyPos.transform.position);
+            s.SetToWalk(rallyPos.transform.position);
         }
     }
 }
