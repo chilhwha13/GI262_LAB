@@ -27,11 +27,18 @@ public class StaffAnimetion : MonoBehaviour
             DisableAll();
             anim.SetBool("IsWalk", true);
         }
+
+        if (staff.State == UnitState.Plow)
+        {
+            DisableAll();
+            anim.SetBool("IsPlow",true);
+        }
     }
  
     private void DisableAll()
     {
         anim.SetBool("IsIdle", false);
         anim.SetBool("IsWalk", false);
+        anim.SetBool("IsPlow",false);
     }
 }

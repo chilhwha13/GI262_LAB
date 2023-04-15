@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public enum UnitState
 {
     Idle,
-    Walk
+    Walk,
+    Plow
 }
 
 
